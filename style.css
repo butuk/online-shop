@@ -1,0 +1,41 @@
+header {
+  width: 100vw;
+  background: aqua;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-weight: normal;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo__text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.logo__subtext {
+  font-size: 15px;
+}
+
+.goods_row {
+  display: flex;
+}
+
+.item_img {
+  width: 20.8333333333vw;
+}
+
+/*# sourceMappingURL=style.css.map */
