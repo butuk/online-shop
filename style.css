@@ -19,6 +19,7 @@ body {
 }
 
 label:hover {
+  cursor: pointer;
   color: darkgoldenrod;
 }
 
@@ -35,7 +36,17 @@ h2, h3, h4, h5 {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 1800px;
+}
+@media screen and (max-width: 1880px) {
+  .container {
+    width: 1560px;
+  }
+}
+@media screen and (max-width: 1640px) {
+  .container {
+    width: 1200px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .container {
@@ -141,26 +152,29 @@ h2, h3, h4, h5 {
   border-bottom: 1px solid gainsboro;
 }
 .sort:hover {
+  cursor: pointer;
   border-bottom: 1px solid darkgoldenrod;
 }
 
 .toggle {
-  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin: 0;
+  cursor: pointer;
   width: 20px;
   height: 12px;
+  border-radius: 6px;
   display: inline-block;
   position: relative;
-  border-radius: 6px;
   overflow: hidden;
   border: 1px gainsboro solid;
-  cursor: pointer;
+  transform: translateY(1px);
   background-color: white;
   transition: background-color ease 0.3s;
 }
 .toggle:hover {
+  cursor: pointer;
   border: 1px darkgoldenrod solid;
 }
 .toggle:before {
@@ -173,7 +187,7 @@ h2, h3, h4, h5 {
   background: black;
   left: 3px;
   top: 3px;
-  border-radius: 50%;
+  border-radius: 60%;
   transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
 .toggle:checked:before {
@@ -182,12 +196,11 @@ h2, h3, h4, h5 {
 }
 
 .checkbox {
-  transform: translateY(1px);
-  margin: 0;
-  margin-right: 7px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin: 0;
+  cursor: pointer;
   width: 16px;
   height: 16px;
   border-radius: 3px;
@@ -195,10 +208,12 @@ h2, h3, h4, h5 {
   position: relative;
   overflow: hidden;
   border: 1px gainsboro solid;
-  cursor: pointer;
+  transform: translateY(1px);
   background-color: white;
+  margin-right: 7px;
 }
 .checkbox:hover {
+  cursor: pointer;
   border: 1px darkgoldenrod solid;
 }
 .checkbox_azure {
@@ -239,7 +254,7 @@ h2, h3, h4, h5 {
   background: black;
   left: 5px;
   top: 5px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 .checkbox_saddlebrown:checked:before {
   content: " ";
@@ -249,8 +264,9 @@ h2, h3, h4, h5 {
   width: 4px;
   height: 4px;
   background: white;
-  left: 4.5px;
-  top: 4.5px;
+  left: 5px;
+  top: 5px;
+  border-radius: 60%;
 }
 .checkbox_midnightblue:checked:before {
   content: " ";
@@ -260,8 +276,9 @@ h2, h3, h4, h5 {
   width: 4px;
   height: 4px;
   background: white;
-  left: 4.5px;
-  top: 4.5px;
+  left: 5px;
+  top: 5px;
+  border-radius: 60%;
 }
 
 .text-input {
@@ -272,6 +289,7 @@ h2, h3, h4, h5 {
   font-size: 16px;
 }
 .text-input:hover {
+  cursor: pointer;
   border: 1px darkgoldenrod solid;
 }
 
@@ -285,15 +303,18 @@ h2, h3, h4, h5 {
   background: url("./ico/reset-default.svg") no-repeat center;
 }
 .reset-button:hover {
+  cursor: pointer;
   background: url("./ico/reset-hover.svg") no-repeat center;
 }
 
 .item {
+  border: white 2px solid;
   height: fit-content;
   padding: 15px 15px 30px;
   margin: 10px;
 }
 .item:hover {
+  cursor: pointer;
   color: darkgoldenrod;
 }
 .item_added {

@@ -1,0 +1,33 @@
+.item {
+  border: white 2px solid;
+  height: fit-content;
+  padding: 15px 15px 30px;
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+    color: darkgoldenrod;
+  };
+  &_added {
+    border: black 2px solid;
+    border-radius: 5px;
+    &:hover {
+      border: darkgoldenrod 2px solid;
+    };
+  }
+}
+
+.item__added-status {
+  opacity: 0;
+}
+
+.item__img {
+  width: 250px;
+}
+
+.item__description {
+  display: flex;
+  flex-direction: column;
+  p, h2 {
+    margin-top: 5px;
+  }
+}

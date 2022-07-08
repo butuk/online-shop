@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script src="dist/index.js"></script>
+
   <section class="container">
   <header class="header">
     <div class="logo">
@@ -35,7 +37,7 @@
     <section class="content">
       <main class="goods">
         <div class="item">
-          <img class="item__img" src="img/02.jpg" alt=""/>
+          <img class="item__img" src="img/big-azure-vaze.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__size">big</span> <span class="item__color">lightblue</span> <span class="item__type">vase</span> </p>
@@ -44,7 +46,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="item__img" src="img/04.jpg" alt=""/>
+          <img class="item__img" src="img/small-midnightblue-vaze.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__size">Big</span> <span class="item__color">lightblue</span> <span class="item__type">vase</span></p>
@@ -55,7 +57,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="item__img" src="img/03.jpg" alt=""/>
+          <img class="item__img" src="img/medium-mistyrose-pot.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
@@ -64,7 +66,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="item__img" src="img/01.jpg" alt=""/>
+          <img class="item__img" src="img/big-lightskyblue-plate.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
@@ -73,26 +75,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="item__img" src="img/09.jpg" alt=""/>
-          <div class="item__description">
-            <h2 class="item__name">Simari</h2>
-            <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
-            <p>made by <span class="item__producer">Jango</span> in <span class="item__year">1988</span></p>
-            <p><span class="item__amount">5</span> pcs left</p>
-          </div>
-        </div>
-        <div class="item item_added">
-          <img class="item__img" src="img/05.jpg" alt=""/>
-          <div class="item__description">
-            <h2 class="item__name">Simari</h2>
-            <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
-            <p>made by <span class="item__producer">Jango</span> in <span class="item__year">1988</span></p>
-            <p><span class="item__amount">5</span> pcs left</p>
-            <p class="item__added-status">IN YOUR CART</p>
-          </div>
-        </div>
-        <div class="item">
-          <img class="item__img" src="img/07.jpg" alt=""/>
+          <img class="item__img" src="img/big-ivory-vaze.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
@@ -101,7 +84,25 @@
           </div>
         </div>
         <div class="item">
-          <img class="item__img" src="img/08.jpg" alt=""/>
+          <img class="item__img" src="img/small-seashell-pot.jpg" alt=""/>
+          <div class="item__description">
+            <h2 class="item__name">Simari</h2>
+            <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
+            <p>made by <span class="item__producer">Jango</span> in <span class="item__year">1988</span></p>
+            <p><span class="item__amount">5</span> pcs left</p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item__img" src="img/medium-saddlebrown-pot.jpg" alt=""/>
+          <div class="item__description">
+            <h2 class="item__name">Simari</h2>
+            <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
+            <p>made by <span class="item__producer">Jango</span> in <span class="item__year">1988</span></p>
+            <p><span class="item__amount">5</span> pcs left</p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item__img" src="img/medium-midnightblue-plate.jpg" alt=""/>
           <div class="item__description">
             <h2 class="item__name">Simari</h2>
             <p><span class="item__color">lightblue</span>, <span class="item__size">big</span> size</p>
@@ -121,15 +122,15 @@
           </section>
           <section class="filter__section filter__section_divided">
             <section class="filter__subsection">
+              <label><input type="checkbox" class="checkbox" name="sizes" value="big">Big</label>
+              <label><input type="checkbox" class="checkbox" name="sizes" value="medium">Medium</label>
+              <label><input type="checkbox" class="checkbox" name="sizes" value="small">Small</label>
+            </section>
+            <section class="filter__subsection">
               <label><input type="checkbox" class="checkbox" name="types" value="vaze">Vaze</label>
               <label><input type="checkbox" class="checkbox" name="types" value="plate">Plate</label>
               <label><input type="checkbox" class="checkbox" name="types" value="pot">Pot</label>
             </section>
-            <section class="filter__subsection">
-              <label><input type="checkbox" class="checkbox" name="sizes" value="big">Big</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="medium">Medium</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="small">Small</label>
-          </section>
           </section>
           <section class="filter__section">
             <label><input type="checkbox" class="checkbox checkbox_azure" name="colors" value="azure">Azure</label>
