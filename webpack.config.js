@@ -6,7 +6,7 @@ let configuration = {
   plugins: [new MiniCssExtractPlugin({filename: "style.css"})],
 
   watch: true,
-  entry: './src/index.js',
+  entry: './src/script.js',
 
   module: {
     rules: [
@@ -24,7 +24,7 @@ let configuration = {
 
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'index.js',
+    filename: 'script.js',
     publicPath: 'dist/',
   },
 

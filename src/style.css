@@ -1,6 +1,3 @@
-/*!*********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
-  \*********************************************************************************************************/
 * {
   box-sizing: border-box;
 }
@@ -105,7 +102,7 @@ h2, h3, h4, h5 {
   right: 10px;
   width: 40px;
   height: 40px;
-  background: center/contain url(dist/2096436819643255161e.svg) no-repeat;
+  background: center/contain url("../ico/cart.svg") no-repeat;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -306,11 +303,11 @@ h2, h3, h4, h5 {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background: url(dist/db1052f63012f7084524.svg) no-repeat center;
+  background: url("../ico/reset-default.svg") no-repeat center;
 }
 .reset-button:hover {
   cursor: pointer;
-  background: url(dist/447703330ddbc0d39a82.svg) no-repeat center;
+  background: url("../ico/reset-hover.svg") no-repeat center;
 }
 
 .item {
@@ -329,6 +326,10 @@ h2, h3, h4, h5 {
 }
 .item_added:hover {
   border: darkgoldenrod 2px solid;
+}
+.item_disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .item__added-status {
@@ -352,4 +353,4 @@ h2, h3, h4, h5 {
   color: darkgoldenrod;
 }
 
-/*# sourceMappingURL=style.css.map*/
+/*# sourceMappingURL=style.css.map */
