@@ -36,11 +36,11 @@
     </div>
   </header>
 
-  <section class="content">
 
-    <main id="app" class="goods">
-      <template v-for="item in items">
-        <div v-if="item.amount > 0" :key="item.id" class="item">
+  <section id="app" class="content">
+    <main class="goods">
+      <template v-for="item in showItems">
+        <div @click="item.amount--" v-if="item.amount > 0" class="item">
           <img class="item__img" :src="item.img" :alt="item.name"/>
           <div class="item__description">
             <h2 class="item__name">{{ item.name }}</h2>
@@ -50,13 +50,13 @@
             <p><span class="item__price">${{ item.price }}</span></p>
           </div>
         </div>
-        <div v-else :key="item.id" class="item item_disabled" >
+        <div v-else class="item item_disabled" >
           <img class="item__img" :src="item.img" :alt="item.name"/>
           <div class="item__description">
             <h2 class="item__name">{{ item.name }}</h2>
             <p><span class="item__size">{{ item.size }}</span> <span class="item__color">{{ item.color }}</span> <span class="item__type">{{ item.type }}</span> </p>
             <p>made by <span class="item__producer">{{ item.creator }}</span> in <span class="item__year">{{ item.year }}.</span></p>
-            <p><span class="item__price">All sold</span> </p>
+            <p><span class="item__price">Sold out</span> </p>
           </div>
         </div>
       </template>
@@ -67,7 +67,7 @@
           <input class="filter__section text-input" type="search" placeholder="Find a counterfeit">
           <section class="filter__section">
             <label>
-                <input class="toggle" type="checkbox">
+                <input v-model="popularOnly" class="toggle" type="checkbox">
                 <span>Only popular</span>
             </label>
           </section>

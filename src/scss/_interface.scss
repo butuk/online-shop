@@ -98,6 +98,7 @@
 }
 
 .toggle {
+  left: -3px;
   @include checkbox(20px, 12px, 6px, white, gainsboro);
   transition: background-color ease 0.3s;
   &:hover {
