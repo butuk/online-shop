@@ -73,31 +73,31 @@
           </section>
           <section class="filter__section filter__section_divided">
             <section class="filter__subsection">
-              <label><input type="checkbox" class="checkbox" name="sizes" value="big">Big</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="medium">Medium</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="small">Small</label>
+              <label><input type="checkbox" class="checkbox" name="sizes" value="big" v-model="size">Big</label>
+              <label><input type="checkbox" class="checkbox" name="sizes" value="medium" v-model="size">Medium</label>
+              <label><input type="checkbox" class="checkbox" name="sizes" value="small" v-model="size">Small</label>
             </section>
             <section class="filter__subsection">
-              <label><input type="checkbox" class="checkbox" name="types" value="vaze">Vaze</label>
-              <label><input type="checkbox" class="checkbox" name="types" value="plate">Plate</label>
-              <label><input type="checkbox" class="checkbox" name="types" value="pot">Pot</label>
+              <label><input type="checkbox" class="checkbox" name="types" value="vaze" v-model="type">Vaze</label>
+              <label><input type="checkbox" class="checkbox" name="types" value="plate" v-model="type">Plate</label>
+              <label><input type="checkbox" class="checkbox" name="types" value="pot" v-model="type">Pot</label>
             </section>
           </section>
           <section class="filter__section">
-            <label><input type="checkbox" class="checkbox checkbox_azure" name="colors" value="azure">Azure</label>
-            <label><input type="checkbox" class="checkbox checkbox_lightskyblue" name="colors" value="lightskyblue">Lightskyblue</label>
-            <label><input type="checkbox" class="checkbox checkbox_midnightblue" name="colors" value="midnightblue">Midnightblue</label>
-            <label><input type="checkbox" class="checkbox checkbox_saddlebrown" name="colors" value="saddlebrown">Saddlebrown</label>
-            <label><input type="checkbox" class="checkbox checkbox_ivory" name="colors" value="ivory">Ivory</label>
-            <label><input type="checkbox" class="checkbox checkbox_mistyrose" name="colors" value="mistyrose">Mistyrose</label>
-            <label><input type="checkbox" class="checkbox checkbox_seashell" name="colors" value="seashell">Seashell</label>
+            <label><input type="checkbox" class="checkbox checkbox_azure" name="colors" value="azure" v-model="color">Azure</label>
+            <label><input type="checkbox" class="checkbox checkbox_lightskyblue" name="colors" value="lightskyblue" v-model="color">Lightskyblue</label>
+            <label><input type="checkbox" class="checkbox checkbox_midnightblue" name="colors" value="midnightblue" v-model="color">Midnightblue</label>
+            <label><input type="checkbox" class="checkbox checkbox_saddlebrown" name="colors" value="saddlebrown" v-model="color">Saddlebrown</label>
+            <label><input type="checkbox" class="checkbox checkbox_ivory" name="colors" value="ivory" v-model="color">Ivory</label>
+            <label><input type="checkbox" class="checkbox checkbox_mistyrose" name="colors" value="mistyrose" v-model="color">Mistyrose</label>
+            <label><input type="checkbox" class="checkbox checkbox_seashell" name="colors" value="seashell" v-model="color">Seashell</label>
           </section>
           <section class="filter__section">
             <h2>Made</h2>
-            <label><input type="checkbox" class="checkbox" name="producers" value="szuki">by Szuki</label>
-            <label><input type="checkbox" class="checkbox" name="producers" value="yaki">Yaki</label>
-            <label><input type="checkbox" class="checkbox" name="producers" value="western">Western</label>
-            <label><input type="checkbox" class="checkbox" name="producers" value="jango">Jango</label>
+            <label><input type="checkbox" class="checkbox" name="producers" value="szuki" v-model="creator">by Szuki</label>
+            <label><input type="checkbox" class="checkbox" name="producers" value="yaki" v-model="creator">Yaki</label>
+            <label><input type="checkbox" class="checkbox" name="producers" value="western" v-model="creator">Western</label>
+            <label><input type="checkbox" class="checkbox" name="producers" value="jango" v-model="creator">Jango</label>
           </section>
           <section class="filter__section">
             <h2>Between years</h2>
