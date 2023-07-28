@@ -73,14 +73,10 @@
           </section>
           <section class="filter__section filter__section_divided">
             <section class="filter__subsection">
-              <label><input type="checkbox" class="checkbox" name="sizes" value="big" v-model="size">Big</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="medium" v-model="size">Medium</label>
-              <label><input type="checkbox" class="checkbox" name="sizes" value="small" v-model="size">Small</label>
+              <label v-for="item in sizes"><input type="checkbox" class="checkbox" name="sizes" :value="item" v-model="size"> {{ item }} </label>
             </section>
             <section class="filter__subsection">
-              <label><input type="checkbox" class="checkbox" name="types" value="vaze" v-model="type">Vaze</label>
-              <label><input type="checkbox" class="checkbox" name="types" value="plate" v-model="type">Plate</label>
-              <label><input type="checkbox" class="checkbox" name="types" value="pot" v-model="type">Pot</label>
+              <label v-for="item in types"><input type="checkbox" class="checkbox" name="types" :value="item" v-model="type">{{ item }}</label>
             </section>
           </section>
           <section class="filter__section">

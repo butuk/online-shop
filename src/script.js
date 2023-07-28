@@ -1,10 +1,18 @@
 import {products} from "./scripts/products.js";
 
+function gatherData(field) {
+  const parameters = new Set();
+  products.items.forEach(item => parameters.add(item[field]));
+  return Array.from(parameters).sort();
+}
+
 Vue.createApp ({
   data() {
     return {
       popularOnly: false,
+      sizes: gatherData('size'),
       size: [],
+      types: gatherData('type'),
       type: [],
       color: [],
       creator: [],
